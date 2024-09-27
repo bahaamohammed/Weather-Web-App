@@ -8,6 +8,7 @@
   /* Start Body */
   body{
     background-color: #333;
+    font-family: 'Cairo', sans-serif;
   }
   /* End Body */
 
@@ -56,3 +57,46 @@
     width: 32px;
   }
   /* End Search */
+
+  /* Start Weather */
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather .temp{
+    font-family: sans-serif;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+/* Start Weather Details */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.details .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.details .col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.details .col div p:nth-child(2){
+    margin-top: -10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
