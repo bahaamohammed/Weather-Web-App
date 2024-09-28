@@ -10,8 +10,8 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" name="city" placeholder="Enter City Name" spellcheck="false">
-            <button>
+            <input type="text" id="city" name="city" placeholder="Enter City Name" spellcheck="false">
+            <button onclick="checkWeather()">
                 <img src="images/search.png" alt="search">
             </button>
         </div>
@@ -37,5 +37,22 @@
             </div>
         </div>
     </div>
+<script>
+    const apiKey = "c7e418a144fbf79d70b0afc9f97b5d8b";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
+    
+    async function checkWeather(){
+        var city_name = document.querySelector("#city").value;
+
+        const response = await fetch(apiUrl + "&q=" + city_name + '&appid=' + apiKey);
+        var data = await response.json();
+
+        document.querySelector(".city").innerHTML = data.name;
+        document.querySelector(".temp").innerHTML = data.main.temp + "°c";
+        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+        document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
+
+    }
+</script>
 </body>
 </html>
