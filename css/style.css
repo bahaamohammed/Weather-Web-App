@@ -59,6 +59,9 @@
   /* End Search */
 
   /* Start Weather */
+.weather{
+    display: none;
+}
 .weather-icon{
     width: 170px;
     margin-top: 30px;
@@ -75,6 +78,7 @@
     font-weight: 400;
     margin-top: -20px;
 }
+/* End Weather */
 
 /* Start Weather Details */
 .details{
@@ -100,3 +104,15 @@
     font-size: 28px;
     margin-top: -6px;
 }
+/* End Weather Details */
+
+/* Start Error */
+.error{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  display: none;
+  color: red;
+}
+/* End Error */
