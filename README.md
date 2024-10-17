@@ -2,6 +2,10 @@
 
 This Weather App is a simple, responsive web application that allows users to search for the current weather in any city worldwide. Built with HTML5, CSS3, and JavaScript, it fetches real-time weather data from the OpenWeatherMap API and displays it in a user-friendly interface.
 
+## Preview
+
+![Screenshot](screenshot.png)
+
 ## Features:
 - **City-based Search**: Users can input a city name to retrieve weather information.
 - **Real-Time Data**: Displays temperature, humidity, and wind speed in real-time.
